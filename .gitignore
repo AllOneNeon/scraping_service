@@ -278,4 +278,8 @@ cython_debug/
 # Ignore code-workspaces
 *.code-workspace
 
+<<<<<<< HEAD
 # End of https://www.toptal.com/developers/gitignore/api/python,django,visualstudiocode
+=======
+# End of https://www.toptal.com/developers/gitignore/api/python,django,visualstudiocode
+>>>>>>> b65ce022b1819e51a8ad82f163a53c75a3312697
