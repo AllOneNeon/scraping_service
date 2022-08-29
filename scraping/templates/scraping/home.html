@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %} SVS {% endblock %}
+
+{% block content %}
+    {% for obj in object_list %}
+    <div class="card my-2">
+        <h5 class="card-header"><a href="{{ obj.url }}">{{ obj.title }}</a></h5>
+        <div class="card-body">
+          <p class="card-text">{{ obj.description }}</p>
+            <p>{{ obj.city.name }} | {{ obj.language.name }} | 
+                <small>{{ obj.timestamp|date:"d m Y" }}</small></p>
+        </div>
+      </div>
+    {% endfor %}
+<form method="GET" action="">
+    <label>City:</label><br>
+    <input type="text"  name="city"><br>
+    <label>Programming language</label><br>
+    <input type="text"  name="language"><br>   
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
